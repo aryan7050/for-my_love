@@ -1,91 +1,66 @@
+/* General body styles */
 body {
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   height: 100vh;
-
-
-
-  background-color: #ffffffe2;
-
+  margin: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Soft pink to orange gradient */
+  font-family: 'Nunito', sans-serif; /* Ensure font is loaded correctly */
 }
 
-
-
+/* Header text styles */
 .header_text {
-
-  font-family: "Nunito";
-
   font-size: 50px;
-
   font-weight: bold;
-
-
-
   text-align: center;
-
-  margin-top: 20px;
-
-  margin-bottom: 20px;
-
-  text-shadow: 0 0 5px rgb(255, 255, 255);
-
-  color: #000000;
-
+  margin: 20px 0;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Slightly more defined shadow */
+  color: #000;
 }
 
-
-
+/* Subtext or other descriptive text */
 .text {
-
-  font-family: "Nunito";
-
   font-size: 25px;
-
   font-weight: bold;
-
-  color: rgb(181, 42, 42);
-
+  color: rgb(181, 42, 42); /* Red text with a bold accent */
   text-align: center;
-
-  margin-top: 20px;
-
-  margin-bottom: 0px;
-
+  margin: 20px 0 0;
 }
 
-
-
+/* Container for gif or other content */
 .gif_container {
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
+  margin-top: 30px; /* Space between gif container and other content */
 }
 
+/* Paragraph links styling */
 p {
-
-  color: white;
-
-  margin-left: 50%;
-
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
 }
 
 p a {
-
-  color: rgb(255, 255, 255);
-
+  color: #fff;
   font-size: 20px;
-
   font-weight: 600;
+  opacity: 0.7; /* Slightly more visible than before */
+  text-decoration: none; /* Removing underline */
+  transition: opacity 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
 
-  opacity: 0.25;
+p a:hover {
+  opacity: 1; /* Hover effect to make the link more prominent */
+  color: rgb(255, 128, 128); /* Light red color when hovered */
+}
 
+/* Optional: Add some container padding for better spacing and aesthetic */
+.container {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
 }
